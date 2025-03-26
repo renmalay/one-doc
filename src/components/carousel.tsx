@@ -23,14 +23,15 @@ export default function CarouselBg() {
                 >
                 {images.map((src, index) => (
                     <div key={index} className="h-screen">
-                    <img
-                    src={src}
-                    alt={`Slide ${index + 1}`}
-                    className="h-screen object-cover"
-                    />
-                </div>
+                        <img
+                        src={src}
+                        alt={`Slide ${index + 1}`}
+                        className="h-screen object-cover"
+                        />
+                    </div>
                 ))}
             </Carousel>
+            {/* <div className="absolute top-0 left-0 w-full h-full z-0 bg-gray-950"></div> */}
         </>
     )
 }
